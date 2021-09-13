@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+header {
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgb(34, 187, 7);
+    color: white;
+    font-weight: 900;
+    font-size: 2rem;
+    padding: 40px 60px;
+    margin-bottom: 20px;
+}
+
+.btn-registro {
+    background-color: green;
+    padding: 5px 27px;
+    border-radius: 8px;
+    margin: 12px;
+    border: none;
+}
+
+.btn-registro a {
+    color: white;
+    text-decoration: none;
+}
+
+input{
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 300px;
+    height: 30px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+label{
+    color:black;
+    padding: 10px;
+    display: inline-block;
+    font-size: large;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    height: 31rem;
+    width: 30rem;
+    transition: 0.3s;
+}
