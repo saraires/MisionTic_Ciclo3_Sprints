@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="" href="">
     <title>Regístrate</title>
 </head>
 
@@ -22,19 +23,19 @@
             <form action="" id="form-registro">
 
                 <label for="" id="Nombre" style="margin-top: 10px;">Nombre</label>
-                <input type="text" />
+                <input id="IptNombre" onchange="checkNombre(3)" type="text" />
 
                 <label for="" id="Apellido">Apellido</label>
-                <input type="text" />
+                <input id="IptApellido" onchange="checkApellido(3)" type="text" />
 
                 <label for="" id="Telefono">Télefono</label>
-                <input type="number" />
+                <input id="IptNumero" onchange="checkTelefono(3)" type="number" />
 
                 <label for="" id="Correo">Correo</label>
-                <input type="email" />
+                <input id="IptCorreo" onchange="checkCorreo(3)" type="email" />
 
                 <label for="" id="Contrasena">Contraseña</label>
-                <input type="password" />
+                <input id="IptContraseña" onchange="checkContrasena(3)" type="password" />
 
                 <input type="submit" name="" id="btn-submit-form" style="display: block; margin-top: 20px;  background-color: rgb(73, 214, 75); width: 20%; line-height: 3px;"/>
             </form>
@@ -42,5 +43,5 @@
         </div>
     </center>
 </body>
-
+<script type="text/javascript" src="javascript/form.js"></script>
 </html>
