@@ -70,3 +70,7 @@ function checkContrasena(valor){
 }
 
 module.exports = checkNombre;
+module.exports = checkApellido;
+module.exports = checkTelefono;
+module.exports = checkCorreo;
+module.exports = checkContrasena;
