@@ -1,9 +1,11 @@
-"use strict"
+//"use strict"
 
 function checkNombre(valor) {
 
     let nombre = valor;
     let regName = /^[a-zA-ZÀ-ÿ\s]{4,30}$/
+
+    console.log(regName.test(nombre))
 
     if (!regName.test(nombre)) {
         return false;
@@ -26,6 +28,8 @@ function checkApellido(valor) {
 function checkTelefono(valor) {
     let numero = valor;
     let regName = /^\d{7}$/
+
+    console.log(regName.test(numero))
 
     if (!regName.test(numero)) {
         return false;
@@ -56,8 +60,10 @@ function checkContrasena(valor) {
     }
 }
 
-module.exports = checkNombre;
-module.exports = checkApellido;
-module.exports = checkTelefono;
-module.exports = checkCorreo;
-module.exports = checkContrasena;
+module.exports = {
+    checkNombre,
+    checkApellido,
+    checkTelefono,
+    checkCorreo, 
+    checkContrasena
+};
