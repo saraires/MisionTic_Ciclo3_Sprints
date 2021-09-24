@@ -1,68 +1,55 @@
 "use strict"
 
-function checkNombre(valor){
+function checkNombre(valor) {
 
-    let nombre = document.getElementById("IptNombre").value
-    let regName =  /^[a-zA-ZÀ-ÿ\s]{4,30}$/
+    let nombre = valor;
+    let regName = /^[a-zA-ZÀ-ÿ\s]{4,30}$/
 
-    console.log(regName.test(nombre));
-
-    if (!regName.test (nombre)) {
-        return false;
-    } else {
-        return true;
-    }
-} 
-
-function checkApellido(valor){
-    let apellido = document.getElementById("IptApellido").value
-    let regName =  /^[a-zA-ZÀ-ÿ\s]{4,30}$/
-
-    console.log(regName.test(apellido));
-
-
-    if (!regName.test (apellido)) {
+    if (!regName.test(nombre)) {
         return false;
     } else {
         return true;
     }
 }
 
-function checkTelefono(valor){
-    let numero = document.getElementById("IptNumero").value
-    let regName = /^\d{7}$/ 
+function checkApellido(valor) {
+    let apellido = valor;
+    let regName = /^[a-zA-ZÀ-ÿ\s]{4,30}$/
 
-    console.log(regName.test(numero));
-
-
-    if (!regName.test (numero)) {
+    if (!regName.test(apellido)) {
         return false;
     } else {
         return true;
     }
 }
 
-function checkCorreo(valor){
-    let correo = document.getElementById("IptCorreo").value
+function checkTelefono(valor) {
+    let numero = valor;
+    let regName = /^\d{7}$/
+
+    if (!regName.test(numero)) {
+        return false;
+    } else {
+        return true;
+    }
+}
+
+function checkCorreo(valor) {
+    let correo = valor;
     let regName = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
 
-    console.log(regName.test(correo));
-
-
-    if (!regName.test (correo)) {
+    if (!regName.test(correo)) {
         return false;
     } else {
         return true;
     }
 }
 
-function checkContrasena(valor){
-    let contraseña = document.getElementById("IptContraseña").value
+function checkContrasena(valor) {
+    let contraseña = valor;
     let regName = /^(?=(?:.*\d){1})(?=(?:.*[A-Z]){1})(?=(?:.*[a-z]){1})\S{8,}$/
 
-    console.log(regName.test(contraseña));
-
-    if (!regName.test (contraseña)) {
+    if (!regName.test(contraseña)) {
         return false;
     } else {
         return true;

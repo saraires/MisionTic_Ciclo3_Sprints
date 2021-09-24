@@ -9,7 +9,7 @@
     <link rel="" href="">
     <title>Regístrate</title>
 </head>
-
+<script type="text/javascript" src="javascript/form.js"></script>
 <body>
 
     <center>
@@ -23,25 +23,23 @@
             <form action="" id="form-registro">
 
                 <label for="" id="Nombre" style="margin-top: 10px;">Nombre</label>
-                <input id="IptNombre" onchange="checkNombre(3)" type="text" />
+                <input id="IptNombre" onblur="checkNombre(this.value)" type="text" />
 
                 <label for="" id="Apellido">Apellido</label>
-                <input id="IptApellido" onchange="checkApellido(3)" type="text" />
+                <input id="IptApellido" onblur="checkApellido(this.value)" type="text" />
 
                 <label for="" id="Telefono">Télefono</label>
-                <input id="IptNumero" onchange="checkTelefono(3)" type="number" />
+                <input id="IptNumero" onblur="checkTelefono(this.value)" type="number" />
 
                 <label for="" id="Correo">Correo</label>
-                <input id="IptCorreo" onchange="checkCorreo(3)" type="email" />
+                <input id="IptCorreo" onblur="checkCorreo(this.value)" type="email" />
 
                 <label for="" id="Contrasena">Contraseña</label>
-                <input id="IptContraseña" onchange="checkContrasena(3)" type="password" />
+                <input id="IptContraseña" onblur="checkContrasena(this.value)" type="password" />
 
-                <input type="submit" name="" id="btn-submit-form" style="display: block; margin-top: 20px;  background-color: rgb(73, 214, 75); width: 20%; line-height: 3px;"/>
+                <input type="submit" name="" id="btn-submit-form" style="display: block; background-color: rgb(73, 214, 75); width: 20%; line-height: 3px;" />
             </form>
-
         </div>
     </center>
 </body>
-<script type="text/javascript" src="javascript/form.js"></script>
 </html>
