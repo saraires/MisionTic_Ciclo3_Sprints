@@ -1,11 +1,11 @@
-let datos = [];
+let registros = [];
 
 function agregarRegistro() {
-    let nombre = document.getElementById("IptNombre").value;
-    let apellido = document.getElementById("IptApellido").value;
-    let telefono = document.getElementById("IptNumero").value;
-    let correo = document.getElementById("IptCorreo").value;
-    let contrasena = document.getElementById("IptContrasena").value;
+    let nombre = document.getElementById("nombre").value;
+    let apellido = document.getElementById("apellido").value;
+    let telefono = document.getElementById("numero").value;
+    let correo = document.getElementById("correo").value;
+    let contrasena = document.getElementById("contrasena").value;
 
     let data = {
         'nombre': nombre,
@@ -14,16 +14,17 @@ function agregarRegistro() {
         'correo': correo,
         'contrasena': contrasena
     }
+
     agregar();
 
     function agregar() {
-        datos.push(data);
+        registros.push(data);
     }
 
-    ordenarArreglo(datos)
-    filtrarCorreo(datos)
+    // ordenarArreglo(registros)
+    // filtrarCorreo(registros)
 
-    console.log(datos)
+    console.log(registros)
 }
 
 
@@ -53,4 +54,7 @@ function filtrarCorreo(arreglo) {
     return (correosOk)
 }
 
-module.exports = { agregarRegistro, ordenarArreglo, filtrarCorreo }
+module.exports.registros = registros;
+module.exports.agregarRegistro = agregarRegistro;
+module.exports.ordenarArreglo = ordenarArreglo;
+module.exports.filtrarCorreo = filtrarCorreo;
