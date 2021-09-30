@@ -10,6 +10,8 @@
     <title>Regístrate</title>
 </head>
 <script type="text/javascript" src="javascript/form.js"></script>
+<script type="text/javascript" src="javascript/registro.js"></script>
+
 <body>
 
     <center>
@@ -37,9 +39,10 @@
                 <label for="" id="Contrasena">Contraseña</label>
                 <input id="IptContraseña" onblur="checkContrasena(this.value)" type="password" />
 
-                <input type="submit" name="" id="btn-submit-form" style="display: block; background-color: rgb(73, 214, 75); width: 20%; line-height: 3px;" />
+                <input type="button" onclick="agregarRegistro()" name="" id="btn-submit-form" style="display: block; background-color: rgb(73, 214, 75); width: 20%; line-height: 3px;" />
             </form>
         </div>
     </center>
 </body>
+
 </html>
