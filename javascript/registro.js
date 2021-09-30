@@ -1,11 +1,12 @@
 let registros = [];
 
 function agregarRegistro() {
-    let nombre = document.getElementById("nombre").value;
-    let apellido = document.getElementById("apellido").value;
-    let telefono = document.getElementById("numero").value;
-    let correo = document.getElementById("correo").value;
-    let contrasena = document.getElementById("contrasena").value;
+    var inputs = document.getElementsByTagName('input');
+    let nombre = inputs[0].value;
+    let apellido = inputs[1].value;
+    let telefono = inputs[2].value;
+    let correo = inputs[3].value;
+    let contrasena = inputs[4].value;
 
     let data = {
         'nombre': nombre,
@@ -44,7 +45,6 @@ function filtrarCorreo(arreglo) {
     let correosOk = []
     for (let i = 0; i < arreglo.length; i++) {
         correoOK = regName.test(arreglo[i]['correo'])
-
         if (correoOK == true) {
             correosOk.push(arreglo[i])
         }
