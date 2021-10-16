@@ -10,7 +10,7 @@
     <title>Regístrate</title>
 </head>
 <script type="text/javascript" src="javascript/form.js"></script>
-<script type="text/javascript" src="javascript/registro.js"></script>
+<script type="text/javascript" src="javascript/login.js"></script>
 
 <body>
 
@@ -24,22 +24,18 @@
         <div style="padding-left: 15px;" class="card">
             <form action="" id="form-registro">
 
-                <label for="" id="Nombre" style="margin-top: 10px;">Nombre</label>
-                <input id="nombre" onblur="checkNombre(this.value)" type="text" />
-
-                <label for="" id="Apellido">Apellido</label>
-                <input id="apellido" onblur="checkApellido(this.value)" type="text" />
-
-                <label for="" id="Telefono">Télefono</label>
-                <input id="numero" onblur="checkTelefono(this.value)" type="number" />
-
                 <label for="" id="Correo">Correo</label>
                 <input id="correo" onblur="checkCorreo(this.value)" type="email" />
 
                 <label for="" id="Contrasena">Contraseña</label>
                 <input id="contrasena" onblur="checkContrasena(this.value)" type="password" />
+                
+                <label for="" id="Contrasena">Captcha</label>
+                <p>¿Qué resultado da el cuarto de un tercio de 12000?</p>
+                <input id="captcha" type="number" />
 
-                <input type="button" onclick="agregarRegistro()" id="btn-submit-form"
+
+                <input type="button" onclick="login()" id="btn-submit-form"
                     style="display: block; background-color: rgb(73, 214, 75); width: 20%; line-height: 3px;" />
             </form>
         </div>
